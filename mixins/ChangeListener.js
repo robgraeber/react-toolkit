@@ -3,19 +3,19 @@ var DEFAULT_CHANGE_HANDLER = '_onChange',
 
 ChangeListener = {
     componentDidMount: function() {
-        var changeListeners = this.constructor.changeListeners; // Static property on component
-        if (changeListeners) {
-            for (var i = 0; i < changeListeners.length; i++) {
-                changeListeners[i].addChangeListener(this[DEFAULT_CHANGE_HANDLER]);
+        var changeEmitters = this.constructor.changeEmitters; // Static property on component
+        if (changeEmitters) {
+            for (var i = 0; i < changeEmitters.length; i++) {
+                changeEmitters[i].addChangeListener(this[DEFAULT_CHANGE_HANDLER]);
             }
         }
     },
     componentWillUnmount: function() {
-        var changeListeners = this.constructor.changeListeners; // Static property on component
+        var changeEmitters = this.constructor.changeEmitters; // Static property on component
 
-        if (changeListeners) {
-            for (var i = 0; i < changeListeners.length; i++) {
-                changeListeners[i].removeChangeListener(this[DEFAULT_CHANGE_HANDLER]);
+        if (changeEmitters) {
+            for (var i = 0; i < changeEmitters.length; i++) {
+                changeEmitters[i].removeChangeListener(this[DEFAULT_CHANGE_HANDLER]);
             }
         }
     }

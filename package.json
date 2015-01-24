@@ -1,0 +1,30 @@
+{
+  "name": "react-toolkit",
+  "version": "1.0.0",
+  "description": "React toolkit for utils, mixins, and ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robgraeber/react-toolkit"
+  },
+  "keywords": [
+    "react",
+    "toolkit",
+    "mixin",
+    "mixins",
+    "ui",
+    "component",
+    "components",
+    "util",
+    "utils"
+  ],
+  "author": "Rob Graeber <noreply@gmail.com> (https://github.com/robgraeber)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robgraeber/react-toolkit/issues"
+  },
+  "homepage": "https://github.com/robgraeber/react-toolkit"
+}

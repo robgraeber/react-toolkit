@@ -2,15 +2,15 @@ React-Toolkit
 =================
 React toolkit for commonly used ui, mixins, and utils. 
 
-####Install
+##Install
 
 ```
 npm install react-toolkit
 ```
 
-####How to use
+##How to use
 
-#####react-toolkit/utils/createManager:
+##react-toolkit/utils/createManager:
 * Creates a data store object with getter/setters and change emitters:
 ```
 var ApiHelper = require('../utils/ApiHelper'),
@@ -26,7 +26,7 @@ var Manager = module.exports = createManager({
 
 ```
 
-#####react-toolkit/mixin/ChangeListener:
+##react-toolkit/mixin/ChangeListener:
 * Mixin that calls _onChange() when target changeEmitter/manager changes:
 ```
 var React = require('react'),
